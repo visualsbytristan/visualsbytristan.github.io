@@ -1,0 +1,160 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+img {
+	width: 100%;
+}
+
+/* COLORS */
+--color-gray-light-1:#F5F5F5; /* whitesmoke */
+
+--color-gray-dark-1:#DDD;
+--color-gray-dark-2:#AAA;
+--color-gray-dark-3:#999;
+--color-gray-dark-4:#555;
+--color-gray-dark-5:#333;
+
+--color-green-1:#008000; /*green*/
+--color-green-2:#6B8E23; /*olivedrab*/
+
+--color-yellow:#FFD700; /*gold*/
+
+--color-red-1:#FF4500; /*orangered*/
+--color-red-2:#B22222; /*firebrick*/
+
+body {
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+	font-size: 14px;
+}
+
+
+.header {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 16px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.header-logo {
+	width: 60px;
+	margin: 5px 0;
+}
+
+.org-name {
+	align-self: center;
+	margin-right: auto;
+	margin-left: 10px;
+	font-size: 24px;
+	font-weight: 400;
+	color: green;
+}
+
+.nav {
+	display: flex;
+	align-items: stretch;
+}
+
+.navbar {
+	display: flex;
+}
+
+.navbar-item {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 20px;
+	cursor: pointer;
+}
+
+.navbar-item img {
+	width: 20px;
+	height: 20px;
+	margin-top: 14px;
+	filter: opacity(.5);
+}
+
+.navbar-item span {
+	text-transform: lowercase;
+	font-weight: 500;
+	color: #AAA;
+}
+
+.navbar-item:hover, .navbar-item.activepage{
+	background-color: gold;
+}
+
+/* Main ****************/
+main {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 14px;
+}
+
+/* ratings ****************/
+.ratings {
+	background-color: firebrick;
+	color: #FFF;
+	padding: 0 0 0 20px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.ratings-location {
+	display: flex;
+	align-items: center;
+}
+
+.ratings-tags {
+	display: flex;
+	align-items: center;
+}
+
+.ratings-icon {
+	width: 18px;
+	height: 18px;
+	filter: invert(100%);
+
+}
+
+.ratings ul {
+	display: flex;
+}
+
+.ratings li {
+	list-style: none;
+}
+
+.ratings li:not(:first-child)::before {
+	content: " | ";
+}
+
+.ratings-stars {
+	display: flex;
+	align-items: center;
+}
+.ratings-votes {
+	background-color: orangered;
+	padding: 10px;
+	font-size: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ratings-item .ratings-icon:first-of-type {
+	margin-right: 5px;
+}
